@@ -29,7 +29,7 @@ export function Navbar() {
         isScrolled ? "bg-white/80 py-3 shadow-sm backdrop-blur-md" : "bg-transparent py-5"
       }`}
     >
-      <div className="mx-auto flex max-w-[1300px] items-center justify-between px-6 lg:px-8">
+      <div className="mx-auto flex max-w-[1400px] items-center justify-between px-6 lg:px-8">
         <div className="flex shrink-0 items-center">
           <img src={navLogo.url} alt="Logo" className="h-10 w-auto" />
         </div>
