@@ -79,14 +79,6 @@ export function ContactFooter() {
                   mixBlendMode: "multiply",
                 }}
               />
-              
-              {/* Background Initials - positioned behind */}
-              <span
-                aria-hidden="true"
-                className="pointer-events-none absolute bottom-0 left-1/2 -translate-x-1/2 text-[15rem] leading-none font-light tracking-tighter text-bronze/5 select-none lg:left-auto lg:right-0 lg:translate-x-0"
-              >
-                {initials}
-              </span>
             </div>
           </Reveal>
         </div>
