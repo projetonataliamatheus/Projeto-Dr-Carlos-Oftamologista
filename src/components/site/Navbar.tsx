@@ -30,12 +30,8 @@ export function Navbar() {
       }`}
     >
       <div className="mx-auto flex max-w-6xl items-center justify-between px-6 lg:px-8">
-        <div className="flex items-center gap-3">
+        <div className="flex items-center">
           <img src={navLogo.url} alt="Logo" className="h-10 w-auto" />
-          <div className="hidden sm:block">
-            <p className="text-sm font-semibold text-espresso">{doctor.prefix} {doctor.firstName} {doctor.lastName}</p>
-            <p className="text-[10px] font-bold tracking-[0.2em] text-bronze uppercase">{doctor.specialty}</p>
-          </div>
         </div>
 
         <div className="hidden items-center gap-8 lg:flex">
