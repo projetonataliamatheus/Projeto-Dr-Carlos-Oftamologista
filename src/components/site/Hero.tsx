@@ -66,7 +66,7 @@ export function Hero() {
       </div>
 
       {/* Connection line to next section */}
-      <div className="h-px w-full bg-gradient-to-r from-transparent via-bronze/20 to-transparent" />
+      <div className="h-[2px] w-full bg-gradient-to-r from-transparent via-bronze/30 to-transparent" />
     </header>
   );
 }
