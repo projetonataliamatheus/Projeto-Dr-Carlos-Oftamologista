@@ -20,7 +20,7 @@ export function Hero() {
         className="pointer-events-none absolute -top-40 -left-40 size-[36rem] rounded-full bg-cream/50 blur-3xl"
       />
 
-      <div className="relative mx-auto grid max-w-6xl items-end gap-0 px-6 lg:grid-cols-[1.05fr_1fr] lg:px-8">
+      <div className="relative mx-auto grid max-w-6xl items-end gap-0 px-6 lg:grid-cols-[1fr_1fr] lg:px-8">
         <Reveal className="relative z-10 pb-16 lg:pb-24">
           <div className="relative rounded-[2rem] border border-bronze/35 border-l-transparent px-2 py-10 sm:px-8 lg:pr-16">
             <h1 className="text-4xl leading-tight tracking-tight text-espresso sm:text-5xl lg:text-6xl">
@@ -41,7 +41,7 @@ export function Hero() {
 
         <Reveal
           delay={120}
-          className="group relative flex justify-center lg:justify-end"
+          className="group relative flex justify-center lg:justify-end lg:pr-4"
         >
           {/* Circle background */}
           <div
