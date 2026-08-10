@@ -40,7 +40,7 @@ export function Hero() {
         <Reveal delay={120} className="relative flex justify-center lg:justify-end">
           <span
             aria-hidden="true"
-            className="absolute bottom-6 left-1/2 size-[22rem] -translate-x-1/2 rounded-full bg-white sm:size-[26rem] lg:size-[30rem]"
+            className="absolute bottom-6 left-1/2 size-[22rem] -translate-x-1/2 rounded-full bg-cream sm:size-[26rem] lg:size-[30rem]"
           />
           <img
             src={drCarlos.url}
