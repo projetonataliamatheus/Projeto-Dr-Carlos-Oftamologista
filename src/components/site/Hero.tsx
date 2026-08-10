@@ -17,7 +17,7 @@ export function Hero() {
       </span>
       <span
         aria-hidden="true"
-        className="pointer-events-none absolute -top-40 -left-40 size-[36rem] rounded-full bg-white blur-3xl"
+        className="pointer-events-none absolute -top-40 -left-40 size-[36rem] rounded-full bg-cream blur-3xl"
       />
 
       <div className="relative mx-auto grid max-w-6xl items-center gap-10 px-6 pt-16 pb-8 lg:grid-cols-[1.05fr_1fr] lg:gap-4 lg:px-8 lg:pt-24">
