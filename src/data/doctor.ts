@@ -23,8 +23,8 @@ export type Location = {
 
 export const doctor = {
   prefix: "Dr.",
-  firstName: "Carlos Rodrigo",
-  lastName: "Feitosa",
+  firstName: "Carlos Rodrigo Damasceno",
+  lastName: "Feitosa de Santana",
   specialty: "Oftalmologista",
   crm: "CRM-SP 269854",
   rqe: "RQE 138773",
@@ -32,10 +32,10 @@ export const doctor = {
   whatsappUrl: "https://wa.me/5500000000000",
   lattesUrl: "https://lattes.cnpq.br/",
   heroParagraph:
-    "Precisão no cuidado. Conhecimento em cada olhar. Atendimento oftalmológico individualizado, com uma abordagem baseada em conhecimento, atualização e atenção a cada detalhe da saúde ocular.",
+    "Uma prática construída com estudo e dedicação. O Dr. Carlos Rodrigo Feitosa de Santana é médico oftalmologista, formado pelo Centro Universitário Christus, com trajetória acadêmica e atuação voltadas à Oftalmologia.",
   bioParagraphs: [
-    "Médico especialista com título pela sociedade da especialidade e pela Associação Médica Brasileira (AMB). Concluiu Fellowship em centro de referência nacional e é Mestre pela universidade onde desenvolveu sua linha de pesquisa. Atua como responsável por serviço hospitalar de referência e preceptor de residência médica.",
-    "Principais áreas de atuação: diagnóstico avançado, procedimentos minimamente invasivos, cirurgias de alta complexidade, tratamentos com tecnologia de ponta e acompanhamento clínico contínuo.",
+    "O Dr. Carlos Rodrigo Feitosa de Santana é médico oftalmologista, formado pelo Centro Universitário Christus, com trajetória acadêmica e atuação voltadas à Oftalmologia.",
+    "Sua trajetória inclui participação em congressos, apresentações de casos clínicos e produção científica na área, mantendo uma busca constante por atualização e conhecimento.",
   ],
   quote: {
     before: "Precisão no ",
@@ -47,36 +47,33 @@ export const doctor = {
   },
   education: [
     {
-      label: "Mestrado",
-      title: "Área da especialidade (Cidade - UF)",
-      lines: [
-        "Universidade de referência, Brasil.",
-        "Título: linha de pesquisa desenvolvida durante o mestrado, com estudo clínico retrospectivo.",
-      ],
+      label: "Graduação - Medicina",
+      title: "Centro Universitário Christus",
+      lines: ["Formado em 2021."],
     },
     {
-      label: "Especialização",
-      title: "Fellowship",
-      lines: ["Universidade de referência, Brasil.", "Fellowship na subespecialidade de atuação."],
+      label: "Especialidade",
+      title: "Oftalmologia",
+      lines: ["Registro de Qualificação de Especialista — RQE 138773."],
     },
     {
-      label: "Especialização",
-      title: "Residência Médica",
-      lines: ["Universidade federal, Brasil.", "Residência médica na especialidade."],
+      label: "Registro Profissional",
+      title: "CRM-SP 269854",
+      lines: ["Conselho Regional de Medicina do Estado de São Paulo."],
     },
     {
-      label: "Graduação",
-      title: "Medicina",
-      lines: ["Universidade federal, Brasil."],
+      label: "Atualização Contínua",
+      title: "Congressos e Produção Científica",
+      lines: ["Participação em eventos, casos clínicos e trabalhos da área."],
     },
   ] satisfies EducationItem[],
   featured: {
-    titleStart: "Saúde Ocular",
-    titleHighlight: "e Bem-estar",
+    titleStart: "Olho Seco",
+    titleHighlight: "e Tratamentos",
     description:
       "Atendimento especializado focado na prevenção e tratamento de patologias oculares, utilizando tecnologia de ponta para garantir a melhor acuidade visual e qualidade de vida para nossos pacientes.",
-    technologiesIntro: "Conheça nossas soluções em oftalmologia:",
-    technologies: ["Exames de Rotina", "Cirurgia Refrativa"],
+    technologiesIntro: "Conheça mais sobre nossas opções de tratamento:",
+    technologies: ["Luz Pulsada (IPL)", "Jett Plasma"],
     ctaLabel: "AGENDAR CONSULTA",
     ctaUrl: "#contato",
   },
