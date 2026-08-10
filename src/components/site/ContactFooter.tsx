@@ -1,6 +1,7 @@
 import { doctor, doctorFullName } from "@/data/doctor";
 import { Reveal } from "./Reveal";
 import drCarlos from "@/assets/dr-hero-fix.png.asset.json";
+import drFooter from "@/assets/dr-footer-final-v8.jpeg.asset.json";
 import { ScheduleButton } from "./ScheduleButton";
 import { Phone, MapPin } from "lucide-react";
 
@@ -68,8 +69,8 @@ export function ContactFooter() {
 
           {/* Photo Side */}
           <Reveal delay={200} className="group relative">
-            <div className="relative aspect-square overflow-hidden rounded-[2.5rem] bg-cream shadow-2xl">
-              {/* Background Initials */}
+            <div className="relative aspect-square overflow-hidden rounded-[2.5rem] bg-transparent">
+              {/* Background Initials (removed color container to keep it transparent) */}
               <span
                 aria-hidden="true"
                 className="pointer-events-none absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-[15rem] leading-none font-light tracking-tighter text-bronze/5 select-none"
@@ -80,7 +81,7 @@ export function ContactFooter() {
               {/* Doctor Image */}
               <div className="absolute inset-0 flex items-end justify-center pt-10">
                 <img
-                  src={drCarlos.url}
+                  src={drFooter.url}
                   alt={`Retrato profissional de ${doctor.prefix} ${doctor.firstName} ${doctor.lastName}`}
                   className="h-full w-auto object-contain transition-transform duration-700 ease-out group-hover:scale-110"
                   style={{
