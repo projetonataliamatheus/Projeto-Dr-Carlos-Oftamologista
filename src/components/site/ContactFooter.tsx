@@ -1,7 +1,7 @@
 import { doctor, doctorFullName } from "@/data/doctor";
 import { Reveal } from "./Reveal";
 import drCarlos from "@/assets/dr-hero-fix.png.asset.json";
-import drFooter from "@/assets/dr-footer-perfect.png.asset.json";
+import drFooter from "@/assets/dr-footer-transparent.png.asset.json";
 import { ScheduleButton } from "./ScheduleButton";
 import { Phone, MapPin } from "lucide-react";
 
@@ -79,7 +79,7 @@ export function ContactFooter() {
               </span>
 
               {/* Doctor Image */}
-              <div className="absolute inset-0 flex items-end justify-center pt-8">
+              <div className="absolute inset-0 flex items-end justify-center">
                 <img
                   src={drFooter.url}
                   alt={`Retrato profissional de ${doctor.prefix} ${doctor.firstName} ${doctor.lastName}`}
