@@ -23,11 +23,11 @@ export type Location = {
 
 export const doctor = {
   prefix: "Dr.",
-  firstName: "Nome",
-  lastName: "Sobrenome",
-  specialty: "Médico Especialista",
-  crm: "CRM 00000",
-  rqe: "RQE 0000",
+  firstName: "Carlos Rodrigo",
+  lastName: "Feitosa",
+  specialty: "Oftalmologista",
+  crm: "CRM-SP 269854",
+  rqe: "RQE 138773",
   phoneLabel: "+55 (00) 00000.0000",
   whatsappUrl: "https://wa.me/5500000000000",
   lattesUrl: "https://lattes.cnpq.br/",
