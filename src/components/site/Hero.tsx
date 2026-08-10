@@ -47,7 +47,7 @@ export function Hero() {
             alt={`Retrato profissional de ${doctor.prefix} ${doctor.firstName} ${doctor.lastName} de jaleco branco`}
             width={912}
             height={1200}
-            className="relative w-[19rem] max-w-full object-contain drop-shadow-[0_24px_50px_rgba(88,64,42,0.16)] sm:w-[23rem] lg:w-[26rem]"
+            className="relative w-[19rem] max-w-full object-contain drop-shadow-[0_24px_50px_rgba(88,64,42,0.12)] sm:w-[23rem] lg:w-[26rem]"
           />
         </Reveal>
       </div>
