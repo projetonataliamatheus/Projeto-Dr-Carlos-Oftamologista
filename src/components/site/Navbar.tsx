@@ -31,7 +31,7 @@ export function Navbar() {
     >
       <div className="mx-auto flex max-w-[1400px] items-center justify-between px-6 lg:px-8">
         <div className="flex shrink-0 items-center">
-          <img src={navLogo.url} alt="Logo" className="h-12 w-auto" />
+          <img src={navLogo.url} alt="Logo" className="h-10 w-auto lg:h-12" />
         </div>
 
         <div className="hidden flex-1 items-center justify-end gap-5 xl:gap-8 lg:flex">
