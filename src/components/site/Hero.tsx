@@ -25,7 +25,7 @@ export function Hero() {
           <div className="relative rounded-[2rem] border border-bronze/35 border-l-transparent px-2 py-10 sm:px-8 lg:pr-16">
             <h1 className="text-4xl leading-tight tracking-tight text-espresso sm:text-5xl lg:text-6xl">
               <span className="font-light">{doctor.prefix} </span>
-              <span className="font-semibold block sm:inline">
+              <span className="font-semibold">
                 {doctor.firstName} {doctor.lastName}
               </span>
             </h1>
