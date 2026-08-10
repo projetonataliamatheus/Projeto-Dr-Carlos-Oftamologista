@@ -11,7 +11,7 @@ export function Hero() {
       {/* Monograma decorativo ao fundo */}
       <span
         aria-hidden="true"
-        className="pointer-events-none absolute top-1/2 right-[6%] -translate-y-1/2 text-[26rem] leading-none font-light tracking-tighter text-white select-none lg:text-[34rem]"
+        className="pointer-events-none absolute top-1/2 right-[6%] -translate-y-1/2 text-[26rem] leading-none font-light tracking-tighter text-cream select-none lg:text-[34rem]"
       >
         {initials}
       </span>
