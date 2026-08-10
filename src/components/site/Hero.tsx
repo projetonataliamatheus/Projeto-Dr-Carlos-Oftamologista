@@ -7,7 +7,7 @@ export function Hero() {
   const initials = `${doctor.firstName.charAt(0)}${doctor.lastName.charAt(0)}`;
 
   return (
-    <header className="relative overflow-hidden bg-background">
+    <header className="relative overflow-hidden bg-white">
       {/* Monograma decorativo ao fundo */}
       <span
         aria-hidden="true"
