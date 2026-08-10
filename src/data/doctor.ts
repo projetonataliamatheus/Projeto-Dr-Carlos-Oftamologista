@@ -32,7 +32,7 @@ export const doctor = {
   whatsappUrl: "https://wa.me/5500000000000",
   lattesUrl: "https://lattes.cnpq.br/",
   heroParagraph:
-    "Médico especialista com título reconhecido pela sociedade da especialidade e pela Associação Médica Brasileira (AMB). Atuação dedicada ao diagnóstico preciso, tratamentos com tecnologia avançada e acompanhamento próximo de cada paciente.",
+    "Precisão no cuidado. Conhecimento em cada olhar. Atendimento oftalmológico individualizado, com uma abordagem baseada em conhecimento, atualização e atenção a cada detalhe da saúde ocular.",
   bioParagraphs: [
     "Médico especialista com título pela sociedade da especialidade e pela Associação Médica Brasileira (AMB). Concluiu Fellowship em centro de referência nacional e é Mestre pela universidade onde desenvolveu sua linha de pesquisa. Atua como responsável por serviço hospitalar de referência e preceptor de residência médica.",
     "Principais áreas de atuação: diagnóstico avançado, procedimentos minimamente invasivos, cirurgias de alta complexidade, tratamentos com tecnologia de ponta e acompanhamento clínico contínuo.",
