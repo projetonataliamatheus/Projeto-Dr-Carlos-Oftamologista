@@ -1,7 +1,7 @@
 import { doctor, doctorFullName } from "@/data/doctor";
 import { Reveal } from "./Reveal";
 import drCarlos from "@/assets/dr-hero-fix.png.asset.json";
-import drFooter from "@/assets/dr-footer-final-v8.jpeg.asset.json";
+import drFooter from "@/assets/dr-footer-final-v9.png.asset.json";
 import { ScheduleButton } from "./ScheduleButton";
 import { Phone, MapPin } from "lucide-react";
 
