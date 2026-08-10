@@ -69,26 +69,24 @@ export function ContactFooter() {
 
           {/* Photo Side */}
           <Reveal delay={200} className="group relative">
-            <div className="relative aspect-square overflow-hidden rounded-[2.5rem] bg-transparent">
-              {/* Background Initials (removed color container to keep it transparent) */}
+            <div className="relative flex h-full items-end justify-center lg:justify-end">
+              {/* Doctor Image */}
+              <img
+                src={drFooter.url}
+                alt={`Retrato profissional de ${doctor.prefix} ${doctor.firstName} ${doctor.lastName}`}
+                className="relative z-10 h-auto w-[20rem] max-w-full object-contain transition-transform duration-700 ease-out group-hover:scale-110 sm:w-[24rem] lg:w-[28rem]"
+                style={{
+                  filter: "drop-shadow(0 20px 40px rgba(88,64,42,0.15))",
+                }}
+              />
+              
+              {/* Background Initials - positioned behind */}
               <span
                 aria-hidden="true"
-                className="pointer-events-none absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-[15rem] leading-none font-light tracking-tighter text-bronze/5 select-none"
+                className="pointer-events-none absolute bottom-0 left-1/2 -translate-x-1/2 text-[15rem] leading-none font-light tracking-tighter text-bronze/5 select-none lg:left-auto lg:right-0 lg:translate-x-0"
               >
                 {initials}
               </span>
-
-              {/* Doctor Image */}
-              <div className="absolute inset-0 flex items-end justify-center">
-                <img
-                  src={drFooter.url}
-                  alt={`Retrato profissional de ${doctor.prefix} ${doctor.firstName} ${doctor.lastName}`}
-                  className="h-full w-auto object-contain transition-transform duration-700 ease-out group-hover:scale-105"
-                  style={{
-                    filter: "drop-shadow(0 20px 40px rgba(88,64,42,0.15))",
-                  }}
-                />
-              </div>
             </div>
           </Reveal>
         </div>
