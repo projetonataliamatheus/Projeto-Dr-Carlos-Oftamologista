@@ -16,7 +16,7 @@ export function Navbar() {
 
   const navLinks = [
     { label: "Início", href: "#" },
-    { label: `O ${doctor.prefix} ${doctor.firstName.split(' ')[0]}`, href: "#formacao" },
+    { label: "O Dr. Carlos", href: "#formacao" },
     { label: "Oftalmologia", href: "#tratamentos" },
     { label: "Áreas de Atuação", href: "#tratamentos" },
     { label: "Conteúdos", href: "#contato" },
@@ -26,24 +26,20 @@ export function Navbar() {
   return (
     <nav
       className={`fixed top-0 z-50 w-full transition-all duration-300 ${
-        isScrolled ? "bg-white/80 py-3 shadow-sm backdrop-blur-md" : "bg-transparent py-5"
+        isScrolled ? "bg-white/95 py-2 shadow-sm backdrop-blur-md" : "bg-white py-4"
       }`}
     >
-      <div className="mx-auto flex max-w-6xl items-center justify-between px-6 lg:px-8">
-        <div className="flex items-center gap-3">
-          <img src={navLogo.url} alt="Logo" className="h-10 w-auto" />
-          <div className="hidden sm:block">
-            <p className="text-sm font-semibold text-espresso">{doctor.prefix} {doctor.firstName} {doctor.lastName}</p>
-            <p className="text-[10px] font-bold tracking-[0.2em] text-bronze uppercase">{doctor.specialty}</p>
-          </div>
+      <div className="mx-auto flex max-w-[1400px] items-center justify-between px-6 lg:px-8">
+        <div className="flex shrink-0 items-center">
+          <img src={navLogo.url} alt="Logo" className="h-10 w-auto lg:h-12" />
         </div>
 
-        <div className="hidden items-center gap-8 lg:flex">
+        <div className="hidden flex-1 items-center justify-end gap-5 xl:gap-8 lg:flex">
           {navLinks.map((link) => (
             <a
               key={link.label}
               href={link.href}
-              className="text-sm font-medium text-espresso/80 transition-colors hover:text-bronze"
+              className="whitespace-nowrap text-sm font-medium text-espresso/80 transition-colors hover:text-bronze"
             >
               {link.label}
             </a>
