@@ -38,12 +38,12 @@ export const doctor = {
     "Principais áreas de atuação: diagnóstico avançado, procedimentos minimamente invasivos, cirurgias de alta complexidade, tratamentos com tecnologia de ponta e acompanhamento clínico contínuo.",
   ],
   quote: {
-    before: "Cuidar da ",
-    highlight1: "sua saúde",
-    middle: " é valorizar sua ",
-    highlight2: "qualidade de vida",
-    after: " e o futuro do seu ",
-    highlight3: "bem-estar.",
+    before: "Precisão no ",
+    highlight1: "cuidado",
+    middle: ". Conhecimento em ",
+    highlight2: "cada olhar",
+    after: ". Saúde ocular com ",
+    highlight3: "excelência.",
   },
   education: [
     {
@@ -71,14 +71,14 @@ export const doctor = {
     },
   ] satisfies EducationItem[],
   featured: {
-    titleStart: "Condição Principal",
-    titleHighlight: "e Tratamentos",
+    titleStart: "Saúde Ocular",
+    titleHighlight: "e Bem-estar",
     description:
-      "Descreva aqui a condição clínica mais procurada no consultório: o que é, por que acontece e como impacta a rotina do paciente. Um parágrafo curto e acolhedor, com linguagem acessível.",
-    technologiesIntro: "Conheça mais sobre nossas opções de tratamento:",
-    technologies: ["Tecnologia A", "Tecnologia B"],
-    ctaLabel: "SAIBA MAIS",
-    ctaUrl: "#tratamentos",
+      "Atendimento especializado focado na prevenção e tratamento de patologias oculares, utilizando tecnologia de ponta para garantir a melhor acuidade visual e qualidade de vida para nossos pacientes.",
+    technologiesIntro: "Conheça nossas soluções em oftalmologia:",
+    technologies: ["Exames de Rotina", "Cirurgia Refrativa"],
+    ctaLabel: "AGENDAR CONSULTA",
+    ctaUrl: "#contato",
   },
   locationsTitle: "Atendimento",
   locations: [
