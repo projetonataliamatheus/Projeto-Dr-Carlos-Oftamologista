@@ -9,7 +9,7 @@ export function ContactFooter() {
   const initials = `${doctor.firstName.charAt(0)}${doctor.lastName.charAt(0)}`;
 
   return (
-    <footer id="contato" className="mt-20 bg-cream/40">
+    <footer id="contato" className="mt-20 bg-[#F9F5F1]">
       <div className="mx-auto max-w-6xl px-6 py-20 lg:px-8">
         <div className="grid items-center gap-12 lg:grid-cols-2">
           {/* Info Side */}
