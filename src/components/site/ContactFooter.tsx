@@ -71,11 +71,11 @@ export function ContactFooter() {
           </Reveal>
 
           <Reveal delay={200} className="relative hidden lg:block">
-            <div className="relative overflow-hidden rounded-[2.5rem]">
+            <div className="relative overflow-visible">
               <img
                 src={doctorFooterPhoto.url}
                 alt={`Foto de ${doctorFullName}`}
-                className="relative z-10 w-full object-cover shadow-2xl transition-transform duration-700 hover:scale-105"
+                className="relative z-10 w-full object-cover transition-transform duration-700 hover:scale-110"
               />
             </div>
           </Reveal>
