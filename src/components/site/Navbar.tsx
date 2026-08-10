@@ -32,7 +32,7 @@ export function Navbar() {
       <div className="mx-auto flex max-w-[1400px] items-center justify-between px-6 lg:px-8">
         <div className="flex shrink-0 items-center">
           <span className="text-lg font-bold tracking-tight text-espresso lg:text-xl">
-            {doctor.prefix} {doctor.firstName} {doctor.lastName}
+            {doctor.prefix} Carlos Rodrigo
           </span>
         </div>
 
