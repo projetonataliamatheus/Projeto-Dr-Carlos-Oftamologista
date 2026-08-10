@@ -76,7 +76,7 @@ export function ContactFooter() {
                 alt={`Retrato profissional de ${doctor.prefix} ${doctor.firstName} ${doctor.lastName}`}
                 className="relative z-10 h-auto w-[22rem] max-w-full object-contain transition-transform duration-700 ease-out group-hover:scale-110 sm:w-[26rem] lg:w-[32rem]"
                 style={{
-                  filter: "none",
+                  mixBlendMode: "multiply",
                 }}
               />
               
