@@ -23,27 +23,27 @@ export type Location = {
 
 export const doctor = {
   prefix: "Dr.",
-  firstName: "Nome",
-  lastName: "Sobrenome",
-  specialty: "Médico Especialista",
-  crm: "CRM 00000",
-  rqe: "RQE 0000",
+  firstName: "Carlos Rodrigo",
+  lastName: "Feitosa",
+  specialty: "Oftalmologista",
+  crm: "CRM-SP 269854",
+  rqe: "RQE 138773",
   phoneLabel: "+55 (00) 00000.0000",
   whatsappUrl: "https://wa.me/5500000000000",
   lattesUrl: "https://lattes.cnpq.br/",
   heroParagraph:
-    "Médico especialista com título reconhecido pela sociedade da especialidade e pela Associação Médica Brasileira (AMB). Atuação dedicada ao diagnóstico preciso, tratamentos com tecnologia avançada e acompanhamento próximo de cada paciente.",
+    "Precisão no cuidado. Conhecimento em cada olhar. Atendimento oftalmológico individualizado, com uma abordagem baseada em conhecimento, atualização e atenção a cada detalhe da saúde ocular.",
   bioParagraphs: [
     "Médico especialista com título pela sociedade da especialidade e pela Associação Médica Brasileira (AMB). Concluiu Fellowship em centro de referência nacional e é Mestre pela universidade onde desenvolveu sua linha de pesquisa. Atua como responsável por serviço hospitalar de referência e preceptor de residência médica.",
     "Principais áreas de atuação: diagnóstico avançado, procedimentos minimamente invasivos, cirurgias de alta complexidade, tratamentos com tecnologia de ponta e acompanhamento clínico contínuo.",
   ],
   quote: {
-    before: "Cuidar da ",
-    highlight1: "sua saúde",
-    middle: " é valorizar sua ",
-    highlight2: "qualidade de vida",
-    after: " e o futuro do seu ",
-    highlight3: "bem-estar.",
+    before: "Precisão no ",
+    highlight1: "cuidado",
+    middle: ". Conhecimento em ",
+    highlight2: "cada olhar",
+    after: ". Saúde ocular com ",
+    highlight3: "excelência.",
   },
   education: [
     {
@@ -71,14 +71,14 @@ export const doctor = {
     },
   ] satisfies EducationItem[],
   featured: {
-    titleStart: "Condição Principal",
-    titleHighlight: "e Tratamentos",
+    titleStart: "Saúde Ocular",
+    titleHighlight: "e Bem-estar",
     description:
-      "Descreva aqui a condição clínica mais procurada no consultório: o que é, por que acontece e como impacta a rotina do paciente. Um parágrafo curto e acolhedor, com linguagem acessível.",
-    technologiesIntro: "Conheça mais sobre nossas opções de tratamento:",
-    technologies: ["Tecnologia A", "Tecnologia B"],
-    ctaLabel: "SAIBA MAIS",
-    ctaUrl: "#tratamentos",
+      "Atendimento especializado focado na prevenção e tratamento de patologias oculares, utilizando tecnologia de ponta para garantir a melhor acuidade visual e qualidade de vida para nossos pacientes.",
+    technologiesIntro: "Conheça nossas soluções em oftalmologia:",
+    technologies: ["Exames de Rotina", "Cirurgia Refrativa"],
+    ctaLabel: "AGENDAR CONSULTA",
+    ctaUrl: "#contato",
   },
   locationsTitle: "Atendimento",
   locations: [

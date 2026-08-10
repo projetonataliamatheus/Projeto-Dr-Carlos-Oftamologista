@@ -1,4 +1,4 @@
-import portrait from "@/assets/doctor-portrait.png";
+import drCarlos from "@/assets/dr-carlos.png.asset.json";
 import { doctor, registration } from "@/data/doctor";
 import { Reveal } from "./Reveal";
 import { ScheduleButton } from "./ScheduleButton";
@@ -11,13 +11,13 @@ export function Hero() {
       {/* Monograma decorativo ao fundo */}
       <span
         aria-hidden="true"
-        className="pointer-events-none absolute top-1/2 right-[6%] -translate-y-1/2 text-[26rem] leading-none font-light tracking-tighter text-cream-deep select-none lg:text-[34rem]"
+        className="pointer-events-none absolute top-1/2 right-[6%] -translate-y-1/2 text-[26rem] leading-none font-light tracking-tighter text-white select-none lg:text-[34rem]"
       >
         {initials}
       </span>
       <span
         aria-hidden="true"
-        className="pointer-events-none absolute -top-40 -left-40 size-[36rem] rounded-full bg-cream-deep/70 blur-3xl"
+        className="pointer-events-none absolute -top-40 -left-40 size-[36rem] rounded-full bg-white blur-3xl"
       />
 
       <div className="relative mx-auto grid max-w-6xl items-center gap-10 px-6 pt-16 pb-8 lg:grid-cols-[1.05fr_1fr] lg:gap-4 lg:px-8 lg:pt-24">
@@ -40,10 +40,10 @@ export function Hero() {
         <Reveal delay={120} className="relative flex justify-center lg:justify-end">
           <span
             aria-hidden="true"
-            className="absolute bottom-6 left-1/2 size-[22rem] -translate-x-1/2 rounded-full bg-cream-deep sm:size-[26rem] lg:size-[30rem]"
+            className="absolute bottom-6 left-1/2 size-[22rem] -translate-x-1/2 rounded-full bg-white sm:size-[26rem] lg:size-[30rem]"
           />
           <img
-            src={portrait}
+            src={drCarlos.url}
             alt={`Retrato profissional de ${doctor.prefix} ${doctor.firstName} ${doctor.lastName} de jaleco branco`}
             width={912}
             height={1200}
