@@ -34,7 +34,7 @@ export function Navbar() {
           <img src={navLogo.url} alt="Logo" className="h-10 w-auto" />
         </div>
 
-        <div className="hidden flex-1 items-center justify-end gap-6 xl:gap-8 lg:flex">
+        <div className="hidden flex-1 items-center justify-end gap-5 xl:gap-8 lg:flex">
           {navLinks.map((link) => (
             <a
               key={link.label}
