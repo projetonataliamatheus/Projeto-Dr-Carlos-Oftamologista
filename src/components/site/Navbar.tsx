@@ -18,7 +18,7 @@ export function Navbar() {
     { label: "Início", href: "#" },
     { label: "O Dr. Carlos", href: "#formacao" },
     { label: "Oftalmologia", href: "#tratamentos" },
-    { label: "Áreas", href: "#tratamentos" },
+    { label: "Áreas de Atuação", href: "#tratamentos" },
     { label: "Conteúdos", href: "#contato" },
     { label: "Contato", href: "#contato" },
   ];
