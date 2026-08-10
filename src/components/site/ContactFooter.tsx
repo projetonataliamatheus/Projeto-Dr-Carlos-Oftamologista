@@ -74,7 +74,7 @@ export function ContactFooter() {
               <img
                 src={drFooter.url}
                 alt={`Retrato profissional de ${doctor.prefix} ${doctor.firstName} ${doctor.lastName}`}
-                className="relative z-10 h-auto w-[22rem] max-w-full object-contain transition-transform duration-700 ease-out group-hover:scale-110 sm:w-[26rem] lg:w-[32rem]"
+                className="relative z-10 h-auto w-[24rem] max-w-full object-contain transition-transform duration-700 ease-out group-hover:scale-105 sm:w-[28rem] lg:w-[36rem]"
                 style={{
                   mixBlendMode: "multiply",
                 }}
