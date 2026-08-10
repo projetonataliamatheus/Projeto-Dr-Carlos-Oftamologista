@@ -1,4 +1,4 @@
-import portrait from "@/assets/doctor-portrait.png";
+import drCarlos from "@/assets/dr-carlos.png.asset.json";
 import { doctor, registration } from "@/data/doctor";
 import { Reveal } from "./Reveal";
 import { ScheduleButton } from "./ScheduleButton";
@@ -43,7 +43,7 @@ export function Hero() {
             className="absolute bottom-6 left-1/2 size-[22rem] -translate-x-1/2 rounded-full bg-cream-deep sm:size-[26rem] lg:size-[30rem]"
           />
           <img
-            src={portrait}
+            src={drCarlos.url}
             alt={`Retrato profissional de ${doctor.prefix} ${doctor.firstName} ${doctor.lastName} de jaleco branco`}
             width={912}
             height={1200}
