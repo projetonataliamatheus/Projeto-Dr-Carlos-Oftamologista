@@ -1,4 +1,4 @@
-import drCarlos from "@/assets/dr-hero-new.png.asset.json";
+import drCarlos from "@/assets/dr-hero-final.png.asset.json";
 import { doctor, registration } from "@/data/doctor";
 import { Reveal } from "./Reveal";
 import { ScheduleButton } from "./ScheduleButton";
