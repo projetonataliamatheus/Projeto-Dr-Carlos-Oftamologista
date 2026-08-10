@@ -5,7 +5,11 @@ import { ScheduleButton } from "./ScheduleButton";
 import contactAsset from "@/assets/dr-contact-final-v7.png.asset.json";
 
 export function ContactFooter() {
-  const location = doctor.locations[0];
+  const location = doctor.locations[0] || {
+    name: "Clínica",
+    address: "Endereço não informado",
+    mapsUrl: "#"
+  };
 
   return (
     <footer id="contato" className="mt-20 overflow-hidden bg-[#EAE2D9]">
