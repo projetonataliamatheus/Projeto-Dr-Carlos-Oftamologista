@@ -1,4 +1,4 @@
-import { GraduationCap } from "lucide-react";
+import { ArrowUpRight } from "lucide-react";
 import { doctor, registration } from "@/data/doctor";
 import { Reveal } from "./Reveal";
 
@@ -23,15 +23,18 @@ export function Education() {
               ))}
             </div>
 
-            <a
-              href={doctor.lattesUrl}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="mt-8 inline-flex items-center gap-3 rounded-full border border-taupe-foreground/50 px-7 py-3 text-xs font-medium tracking-[0.16em] uppercase transition-colors duration-300 hover:bg-taupe-foreground/15"
+            <button
+              onClick={() => {
+                const treatmentsEl = document.getElementById("tratamentos");
+                if (treatmentsEl) {
+                  treatmentsEl.scrollIntoView({ behavior: "smooth" });
+                }
+              }}
+              className="mt-8 inline-flex items-center gap-3 rounded-full bg-white px-7 py-3 text-xs font-medium tracking-[0.16em] text-bronze-dark uppercase shadow-sm transition-all duration-300 hover:-translate-y-0.5 hover:shadow-md"
             >
-              <GraduationCap className="size-4" aria-hidden="true" />
-              Currículo Lattes
-            </a>
+              Conheça Minha Trajetória
+              <ArrowUpRight className="size-4" aria-hidden="true" />
+            </button>
           </div>
 
           <ol className="relative space-y-10 border-l border-taupe-foreground/25 pl-8">

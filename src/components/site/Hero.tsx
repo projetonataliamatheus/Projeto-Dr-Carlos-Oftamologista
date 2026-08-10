@@ -29,7 +29,7 @@ export function Hero() {
                 {doctor.firstName} {doctor.lastName}
               </span>
             </h1>
-            <p className="label-wide mt-4 text-sm font-medium text-bronze">{registration}</p>
+            <p className="label-wide mt-4 text-sm font-medium text-bronze uppercase">{registration}</p>
             <p className="mt-6 max-w-xl border-l border-bronze/40 pl-5 text-base leading-relaxed text-muted-foreground">
               {doctor.heroParagraph}
             </p>

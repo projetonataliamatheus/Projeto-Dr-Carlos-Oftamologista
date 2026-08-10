@@ -8,27 +8,27 @@ export function Treatments() {
 
   return (
     <section aria-labelledby="tratamentos-titulo" className="px-4 pb-8 sm:px-6 lg:px-8">
-      <Reveal className="mx-auto max-w-6xl rounded-[2.25rem] bg-sand/70 px-6 py-14 sm:px-10 lg:px-14">
+      <Reveal className="mx-auto max-w-6xl rounded-[2.25rem] bg-[#59B2BA] px-6 py-14 sm:px-10 lg:px-14">
         <div className="grid gap-8 lg:grid-cols-[0.9fr_1.1fr] lg:items-center lg:gap-16">
           <h2 id="tratamentos-titulo" className="text-3xl tracking-tight sm:text-4xl lg:text-5xl">
-            <span className="block font-light text-espresso">{featured.titleStart}</span>
-            <span className="block font-semibold text-espresso">{featured.titleHighlight}</span>
+            <span className="block font-light text-white">{featured.titleStart}</span>
+            <span className="block font-semibold text-white">{featured.titleHighlight}</span>
           </h2>
 
           <div>
-            <p className="text-base leading-relaxed text-espresso-soft">{featured.description}</p>
-            <p className="mt-5 text-base text-espresso-soft">
+            <p className="text-base leading-relaxed text-white/90">{featured.description}</p>
+            <p className="mt-5 text-base text-white/90">
               {featured.technologiesIntro}{" "}
               {featured.technologies.map((tech, index) => (
                 <span key={tech}>
-                  <strong className="font-semibold text-espresso">{tech}</strong>
+                  <strong className="font-semibold text-white">{tech}</strong>
                   {index < featured.technologies.length - 1 ? " e " : "."}
                 </span>
               ))}
             </p>
             <a
               href={featured.ctaUrl}
-              className="mt-8 inline-flex items-center gap-2 rounded-full border border-bronze px-7 py-3 text-xs font-medium tracking-[0.16em] text-bronze uppercase transition-colors duration-300 hover:bg-bronze hover:text-bronze-foreground"
+              className="mt-8 inline-flex items-center gap-2 rounded-full border border-white px-7 py-3 text-xs font-medium tracking-[0.16em] text-white uppercase transition-colors duration-300 hover:bg-white hover:text-[#59B2BA]"
             >
               {featured.ctaLabel}
               <ArrowUpRight className="size-4" aria-hidden="true" />
