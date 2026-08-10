@@ -1,57 +1,107 @@
 import { doctor, doctorFullName } from "@/data/doctor";
 import { Reveal } from "./Reveal";
-import footerReference from "@/assets/dr-footer-reference.png.asset.json";
+import drCarlos from "@/assets/dr-hero-fix.png.asset.json";
+import { ScheduleButton } from "./ScheduleButton";
+import { Phone, MapPin } from "lucide-react";
 
 export function ContactFooter() {
+  const initials = `${doctor.firstName.charAt(0)}${doctor.lastName.charAt(0)}`;
+
   return (
-    <footer id="contato" className="mt-20">
-      <div className="mx-auto max-w-[1400px] px-4 pb-20">
-        <Reveal>
-          <div className="relative overflow-hidden rounded-[2.5rem] shadow-2xl">
-            {/* 
-              The user wants the footer to look EXACTLY like the image provided.
-              The image imagem_1786388857785.png is a complete design block.
-              We render it as a single high-quality responsive container that scales perfectly.
-            */}
-            <img 
-              src={footerReference.url} 
-              alt="Informações de contato e localização"
-              className="w-full h-auto block"
-            />
-            
-            {/* Invisible clickable areas to make it functional like a real UI */}
-            <div className="absolute inset-0 z-20">
-              {/* WhatsApp/Schedule button area (estimated coordinates based on layout) */}
-              <a 
-                href={doctor.whatsappUrl}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="absolute left-[20%] top-[40%] w-[25%] h-[15%] cursor-pointer"
-                title="Agende sua consulta"
-              />
-              
-              {/* Phone area */}
-              <a 
-                href={`tel:${doctor.phoneLabel.replace(/\D/g, '')}`}
-                className="absolute left-[20%] top-[55%] w-[20%] h-[10%] cursor-pointer"
-                title="Ligar"
-              />
-              
-              {/* Maps area */}
-              <a 
-                href={doctor.locations[0]?.mapsUrl || "#"}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="absolute left-[15%] top-[70%] w-[35%] h-[15%] cursor-pointer"
-                title="Ver no mapa"
-              />
+    <footer id="contato" className="mt-20 bg-cream/40">
+      <div className="mx-auto max-w-6xl px-6 py-20 lg:px-8">
+        <div className="grid items-center gap-12 lg:grid-cols-2">
+          {/* Info Side */}
+          <Reveal>
+            <div className="space-y-10">
+              <div className="space-y-4">
+                <h2 className="text-4xl font-semibold text-espresso">
+                  {doctor.prefix} {doctor.firstName} <br />
+                  {doctor.lastName}
+                </h2>
+                <div className="h-1 w-20 bg-bronze/40" />
+              </div>
+
+              <div className="space-y-8">
+                {/* Contact Buttons */}
+                <div className="flex flex-col gap-4 sm:flex-row">
+                  <ScheduleButton href={doctor.whatsappUrl} />
+                  <a
+                    href={`tel:${doctor.phoneLabel.replace(/\D/g, "")}`}
+                    className="flex items-center justify-center gap-2 rounded-full border border-bronze/30 px-8 py-4 text-sm font-semibold text-espresso transition-all hover:bg-bronze hover:text-white"
+                  >
+                    <Phone className="size-4" />
+                    {doctor.phoneLabel}
+                  </a>
+                </div>
+
+                {/* Location */}
+                <div className="space-y-6">
+                  <p className="label-wide text-xs font-bold text-bronze uppercase tracking-widest">
+                    Onde Atendemos
+                  </p>
+                  {doctor.locations.map((loc, idx) => (
+                    <div key={idx} className="flex gap-4">
+                      <div className="flex size-10 shrink-0 items-center justify-center rounded-full bg-bronze/10 text-bronze">
+                        <MapPin className="size-5" />
+                      </div>
+                      <div>
+                        <h4 className="font-semibold text-espresso">{loc.name}</h4>
+                        <p className="mt-1 text-sm text-muted-foreground leading-relaxed max-w-xs">
+                          {loc.address}
+                        </p>
+                        <a
+                          href={loc.mapsUrl}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="mt-3 inline-block text-xs font-bold text-bronze underline decoration-bronze/30 underline-offset-4 transition-colors hover:text-espresso"
+                        >
+                          VER NO MAPA
+                        </a>
+                      </div>
+                    </div>
+                  ))}
+                </div>
+              </div>
             </div>
+          </Reveal>
+
+          {/* Photo Side */}
+          <Reveal delay={200} className="group relative">
+            <div className="relative aspect-square overflow-hidden rounded-[2.5rem] bg-cream shadow-2xl">
+              {/* Background Initials */}
+              <span
+                aria-hidden="true"
+                className="pointer-events-none absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-[15rem] leading-none font-light tracking-tighter text-bronze/5 select-none"
+              >
+                {initials}
+              </span>
+
+              {/* Doctor Image */}
+              <div className="absolute inset-0 flex items-end justify-center pt-10">
+                <img
+                  src={drCarlos.url}
+                  alt={`Retrato profissional de ${doctor.prefix} ${doctor.firstName} ${doctor.lastName}`}
+                  className="h-full w-auto object-contain transition-transform duration-700 ease-out group-hover:scale-110"
+                  style={{
+                    filter: "drop-shadow(0 20px 40px rgba(88,64,42,0.15))",
+                  }}
+                />
+              </div>
+            </div>
+          </Reveal>
+        </div>
+
+        {/* Footer Bottom */}
+        <div className="mt-20 flex flex-col items-center justify-between border-t border-bronze/10 pt-8 sm:flex-row">
+          <p className="text-[10px] font-medium text-espresso/40 uppercase tracking-[0.2em]">
+            {new Date().getFullYear()} © {doctorFullName} | Todos os direitos reservados.
+          </p>
+          <div className="mt-4 flex gap-6 sm:mt-0">
+            <a href="#" className="text-[10px] font-bold text-bronze hover:text-espresso transition-colors uppercase tracking-widest">
+              Política de Privacidade
+            </a>
           </div>
-        </Reveal>
-        
-        {/* Simple text copyright below the image for SEO and accessibility */}
-        <div className="mt-8 text-center text-[10px] font-medium text-espresso/40 uppercase tracking-widest">
-          {new Date().getFullYear()} © {doctorFullName} | Todos os direitos reservados.
         </div>
       </div>
     </footer>
