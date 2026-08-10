@@ -7,7 +7,7 @@ export function Hero() {
   const initials = `${doctor.firstName.charAt(0)}${doctor.lastName.charAt(0)}`;
 
   return (
-    <header className="relative bg-white pt-12 lg:pt-20">
+    <header className="relative bg-white pt-6 lg:pt-10">
       {/* Background elements */}
       <span
         aria-hidden="true"
