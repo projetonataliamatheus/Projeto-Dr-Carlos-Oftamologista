@@ -2,7 +2,7 @@ import { MapPin, Phone } from "lucide-react";
 import { doctor, doctorFullName, registration } from "@/data/doctor";
 import { Reveal } from "./Reveal";
 import { ScheduleButton } from "./ScheduleButton";
-import doctorFooterPhoto from "@/assets/dr-footer-final-v5.png.asset.json";
+import doctorFooterPhoto from "@/assets/dr-footer-final-v6.png.asset.json";
 
 export function ContactFooter() {
   return (
@@ -70,12 +70,20 @@ export function ContactFooter() {
             </div>
           </Reveal>
 
-          <Reveal delay={200} className="relative hidden lg:block">
+          <Reveal delay={200} className="group relative hidden lg:block">
             <div className="relative overflow-visible">
+              {/* Circle background same as Hero */}
+              <div
+                aria-hidden="true"
+                className="absolute bottom-0 right-0 size-[26rem] rounded-t-full bg-bronze/5 transition-transform duration-700 ease-out group-hover:scale-105"
+              />
               <img
                 src={doctorFooterPhoto.url}
                 alt={`Foto de ${doctorFullName}`}
-                className="relative z-10 w-full object-cover transition-transform duration-700 hover:scale-110"
+                className="relative z-10 w-full translate-y-2 object-contain transition-all duration-700 ease-out group-hover:scale-110 group-hover:translate-y-0"
+                style={{
+                  filter: "drop-shadow(0 20px 40px rgba(88,64,42,0.1))",
+                }}
               />
             </div>
           </Reveal>
