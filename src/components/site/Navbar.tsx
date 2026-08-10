@@ -30,11 +30,11 @@ export function Navbar() {
       }`}
     >
       <div className="mx-auto flex max-w-[1200px] items-center justify-between px-6 lg:px-8">
-        <div className="flex items-center">
+        <div className="flex shrink-0 items-center">
           <img src={navLogo.url} alt="Logo" className="h-10 w-auto" />
         </div>
 
-        <div className="hidden items-center gap-8 lg:flex">
+        <div className="hidden flex-1 items-center justify-end gap-6 xl:gap-8 lg:flex">
           {navLinks.map((link) => (
             <a
               key={link.label}
