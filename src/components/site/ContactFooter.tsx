@@ -2,7 +2,7 @@ import { MapPin, Phone } from "lucide-react";
 import { doctor, doctorFullName, registration } from "@/data/doctor";
 import { Reveal } from "./Reveal";
 import { ScheduleButton } from "./ScheduleButton";
-import doctorFooterPhoto from "@/assets/dr-footer-final-v4.png.asset.json";
+import doctorFooterPhoto from "@/assets/dr-footer-final-v5.png.asset.json";
 
 export function ContactFooter() {
   return (
