@@ -3,6 +3,7 @@ import { createFileRoute } from "@tanstack/react-router";
 import { ContactFooter } from "@/components/site/ContactFooter";
 import { Education } from "@/components/site/Education";
 import { Hero } from "@/components/site/Hero";
+import { Navbar } from "@/components/site/Navbar";
 import { QuoteBand } from "@/components/site/QuoteBand";
 import { Treatments } from "@/components/site/Treatments";
 import { WhatsappFloat } from "@/components/site/WhatsappFloat";
