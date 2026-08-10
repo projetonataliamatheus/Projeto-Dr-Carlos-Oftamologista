@@ -1,24 +1,39 @@
 import { createFileRoute } from "@tanstack/react-router";
 
-// No head() here: the home route inherits title/description/og/twitter from
-// __root.tsx, and ships no og:image so serve-time hosting can inject the
-// project's social preview (explicit og:image or latest screenshot).
+import { ContactFooter } from "@/components/site/ContactFooter";
+import { Education } from "@/components/site/Education";
+import { Hero } from "@/components/site/Hero";
+import { QuoteBand } from "@/components/site/QuoteBand";
+import { Treatments } from "@/components/site/Treatments";
+import { WhatsappFloat } from "@/components/site/WhatsappFloat";
+import { doctor, doctorFullName, registration } from "@/data/doctor";
+
+const title = `${doctorFullName} — ${doctor.specialty}`;
+const description = `${doctor.specialty} | ${registration}. Consultas, diagnóstico de precisão e tratamentos com tecnologia avançada. Agende sua consulta.`;
+
 export const Route = createFileRoute("/")({
+  head: () => ({
+    meta: [
+      { title },
+      { name: "description", content: description },
+      { property: "og:title", content: title },
+      { property: "og:description", content: description },
+      { property: "og:type", content: "website" },
+      { name: "twitter:card", content: "summary_large_image" },
+    ],
+  }),
   component: Index,
 });
 
-// IMPORTANT: Replace this placeholder. See ./README.md for routing conventions.
 function Index() {
   return (
-    <div
-      className="flex min-h-screen items-center justify-center"
-      style={{ backgroundColor: "#fcfbf8" }}
-    >
-      <img
-        data-lovable-blank-page-placeholder="REMOVE_THIS"
-        src="https://cdn.gpteng.co/blank-app-v1.svg"
-        alt="Your app will live here!"
-      />
-    </div>
+    <main className="min-h-screen bg-background">
+      <Hero />
+      <Education />
+      <QuoteBand />
+      <Treatments />
+      <ContactFooter />
+      <WhatsappFloat />
+    </main>
   );
 }
