@@ -68,7 +68,7 @@ export function ContactFooter() {
           </Reveal>
 
           {/* Photo Side */}
-          <Reveal delay={200} className="group relative">
+          <Reveal className="group relative">
             <div className="relative flex h-full items-end justify-center lg:justify-end">
               {/* Doctor Image */}
               <img
