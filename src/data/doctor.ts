@@ -28,8 +28,8 @@ export const doctor = {
   specialty: "Oftalmologista",
   crm: "CRM-SP 269854",
   rqe: "RQE 138773",
-  phoneLabel: "+55 (00) 00000.0000",
-  whatsappUrl: "https://wa.me/5500000000000",
+  phoneLabel: "(19) 3251-1718",
+  whatsappUrl: "https://wa.me/551932511718",
   lattesUrl: "https://lattes.cnpq.br/",
   heroParagraph:
     "Uma prática construída com estudo e dedicação. O Dr. Carlos Rodrigo Feitosa de Santana é médico oftalmologista, formado pelo Centro Universitário Christus, com trajetória acadêmica e atuação voltadas à Oftalmologia.",
@@ -77,17 +77,12 @@ export const doctor = {
     ctaLabel: "SAIBA MAIS",
     ctaUrl: "#contato",
   },
-  locationsTitle: "Atendimento",
+  locationsTitle: "Onde Atendemos",
   locations: [
     {
-      name: "Unidade Principal",
-      address: "Nome do edifício, Av. Exemplo, nº 000, 0º andar, Bairro, Cidade UF",
-      mapsUrl: "https://maps.google.com/",
-    },
-    {
-      name: "Segunda Unidade",
-      address: "Rua Exemplo, nº 000, Centro, Cidade UF",
-      mapsUrl: "https://maps.google.com/",
+      name: "Med Olhos Campinas",
+      address: "R. Dr. Souza Lima, 45 - Cambuí, Campinas - SP, 13025-280",
+      mapsUrl: "https://www.google.com/maps/place/Med+Olhos+Campinas/@-22.8986221,-47.0506371,17z/data=!3m1!4b1!4m6!3m5!1s0x94c8c8ad664f3d1b:0x5e0f9b6b6c0b0b0b!8m2!3d-22.8986221!4d-47.0506371!16s%2Fg%2F11b6x5w4h5?entry=ttu",
     },
   ] satisfies Location[],
 };
