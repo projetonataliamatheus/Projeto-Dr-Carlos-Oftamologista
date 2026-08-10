@@ -16,7 +16,7 @@ export function Navbar() {
 
   const navLinks = [
     { label: "Início", href: "#" },
-    { label: `O ${doctor.prefix} ${doctor.firstName.split(' ')[0]}`, href: "#formacao" },
+    { label: "O Dr. Carlos", href: "#formacao" },
     { label: "Oftalmologia", href: "#tratamentos" },
     { label: "Áreas de Atuação", href: "#tratamentos" },
     { label: "Conteúdos", href: "#contato" },
