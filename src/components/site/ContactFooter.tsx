@@ -1,7 +1,7 @@
 import { doctor, doctorFullName } from "@/data/doctor";
 import { Reveal } from "./Reveal";
 import drCarlos from "@/assets/dr-hero-fix.png.asset.json";
-import drFooter from "@/assets/dr-footer-final.png.asset.json";
+import drFooter from "@/assets/dr-footer-final-v10.png.asset.json";
 import { ScheduleButton } from "./ScheduleButton";
 import { Phone, MapPin } from "lucide-react";
 
@@ -9,7 +9,7 @@ export function ContactFooter() {
   const initials = `${doctor.firstName.charAt(0)}${doctor.lastName.charAt(0)}`;
 
   return (
-    <footer id="contato" className="mt-20 bg-cream/40">
+    <footer id="contato" className="mt-20 bg-[#F9F5F1]">
       <div className="mx-auto max-w-6xl px-6 py-20 lg:px-8">
         <div className="grid items-center gap-12 lg:grid-cols-2">
           {/* Info Side */}
@@ -68,27 +68,17 @@ export function ContactFooter() {
           </Reveal>
 
           {/* Photo Side */}
-          <Reveal delay={200} className="group relative">
-            <div className="relative aspect-square overflow-hidden rounded-[2.5rem] bg-transparent">
-              {/* Background Initials (removed color container to keep it transparent) */}
-              <span
-                aria-hidden="true"
-                className="pointer-events-none absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-[15rem] leading-none font-light tracking-tighter text-bronze/5 select-none"
-              >
-                {initials}
-              </span>
-
+          <Reveal className="group relative">
+            <div className="relative flex h-full items-end justify-center lg:justify-end">
               {/* Doctor Image */}
-              <div className="absolute inset-0 flex items-end justify-center">
-                <img
-                  src={drFooter.url}
-                  alt={`Retrato profissional de ${doctor.prefix} ${doctor.firstName} ${doctor.lastName}`}
-                  className="h-full w-auto object-contain transition-transform duration-700 ease-out group-hover:scale-105"
-                  style={{
-                    filter: "drop-shadow(0 20px 40px rgba(88,64,42,0.15))",
-                  }}
-                />
-              </div>
+              <img
+                src={drFooter.url}
+                alt={`Retrato profissional de ${doctor.prefix} ${doctor.firstName} ${doctor.lastName}`}
+                className="relative z-10 h-auto w-[24rem] max-w-full object-contain transition-transform duration-700 ease-out group-hover:scale-105 sm:w-[28rem] lg:w-[36rem]"
+                style={{
+                  mixBlendMode: "multiply",
+                }}
+              />
             </div>
           </Reveal>
         </div>
