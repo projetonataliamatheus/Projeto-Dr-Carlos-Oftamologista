@@ -4,7 +4,7 @@ import { Reveal } from "./Reveal";
 
 export function Education() {
   return (
-    <section aria-labelledby="formacao" className="relative px-6 py-24 sm:px-8 lg:px-12 lg:py-40 bg-[#F9F5F1]">
+    <section aria-labelledby="formacao" className="relative px-6 py-24 sm:px-8 lg:px-12 lg:py-40 bg-[#EAE2D9]">
       <Reveal className="mx-auto max-w-7xl px-0">
         <div className="grid gap-20 lg:grid-cols-2 lg:gap-32">
           <div className="lg:border-r lg:border-bronze/10 lg:pr-14">
