@@ -10,7 +10,7 @@ import type { Treatment } from "./doctor";
 
 export const treatments: Treatment[] = [
   {
-    title: "Olho Seco",
+    title: "Tratamento com Luz Pulsada para Olho Seco",
     description:
       "Abordagem inovadora e não invasiva que alivia os sintomas e estimula a recuperação natural dos tecidos, com sessões rápidas e confortáveis.",
     image: t1,
