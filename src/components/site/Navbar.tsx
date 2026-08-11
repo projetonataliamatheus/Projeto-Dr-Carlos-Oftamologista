@@ -36,12 +36,12 @@ export function Navbar() {
           </span>
         </div>
 
-        <div className="hidden flex-1 items-center justify-end gap-5 xl:gap-8 lg:flex">
+        <div className="hidden flex-1 items-center justify-end gap-6 xl:gap-10 lg:flex">
           {navLinks.map((link) => (
             <a
               key={link.label}
               href={link.href}
-              className="whitespace-nowrap text-sm font-medium text-espresso/80 transition-colors hover:text-bronze"
+              className="whitespace-nowrap text-[11px] font-bold tracking-[0.2em] text-espresso/60 transition-all hover:text-bronze uppercase"
             >
               {link.label}
             </a>
