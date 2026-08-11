@@ -25,23 +25,23 @@ export function Navbar() {
 
   return (
     <nav
-      className={`fixed top-0 z-50 w-full transition-all duration-300 ${
-        isScrolled ? "bg-white/95 py-2 shadow-sm backdrop-blur-md" : "bg-white py-4"
+      className={`fixed top-0 z-50 w-full transition-all duration-500 ${
+        isScrolled ? "bg-white/90 py-3 shadow-sm backdrop-blur-xl" : "bg-transparent py-6"
       }`}
     >
-      <div className="mx-auto flex max-w-[1400px] items-center justify-between px-6 lg:px-8">
+      <div className="mx-auto flex max-w-[1500px] items-center justify-between px-6 lg:px-12">
         <div className="flex shrink-0 items-center">
-          <span className="text-lg font-bold tracking-tight text-espresso lg:text-xl">
-            {doctor.prefix} Carlos Rodrigo
+          <span className="text-xl font-medium tracking-tight text-espresso lg:text-2xl">
+            {doctor.prefix} <span className="font-light text-espresso/70">Carlos Rodrigo</span>
           </span>
         </div>
 
-        <div className="hidden flex-1 items-center justify-end gap-5 xl:gap-8 lg:flex">
+        <div className="hidden flex-1 items-center justify-end gap-6 xl:gap-10 lg:flex">
           {navLinks.map((link) => (
             <a
               key={link.label}
               href={link.href}
-              className="whitespace-nowrap text-sm font-medium text-espresso/80 transition-colors hover:text-bronze"
+              className="whitespace-nowrap text-[11px] font-bold tracking-[0.2em] text-espresso/60 transition-all hover:text-bronze uppercase"
             >
               {link.label}
             </a>

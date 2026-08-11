@@ -7,7 +7,7 @@ export function Hero() {
   const initials = `${doctor.firstName.charAt(0)}${doctor.lastName.charAt(0)}`;
 
   return (
-    <header className="relative bg-white pt-6 lg:pt-10">
+    <header className="relative bg-cream pt-20 lg:pt-32">
       {/* Background elements */}
       <span
         aria-hidden="true"
@@ -20,22 +20,24 @@ export function Hero() {
         className="pointer-events-none absolute -top-40 -left-40 size-[36rem] rounded-full bg-cream/50 blur-3xl"
       />
 
-      <div className="relative mx-auto grid max-w-6xl items-end gap-0 px-6 lg:grid-cols-[1fr_1fr] lg:px-8">
+      <div className="relative mx-auto grid max-w-7xl items-end gap-12 px-6 lg:grid-cols-[1.1fr_0.9fr] lg:px-12">
         <Reveal className="relative z-10 pb-16 lg:pb-24">
-          <div className="relative rounded-[2rem] border border-bronze/35 border-l-transparent px-2 py-10 sm:px-8 lg:pr-16">
-            <h1 className="text-4xl leading-tight tracking-tight text-espresso sm:text-5xl lg:text-6xl">
-              <span className="font-light">{doctor.prefix} </span>
-              <span className="font-semibold">
-                {doctor.firstName} {doctor.lastName}
+          <div className="relative rounded-[2.5rem] border border-bronze/20 bg-white/50 px-4 py-16 sm:px-12 lg:border-none lg:bg-transparent lg:px-0 lg:py-16">
+            <h1 className="text-5xl leading-[1.1] tracking-tight text-espresso sm:text-6xl lg:text-7xl">
+              <span className="block font-light text-espresso/90">{doctor.prefix} </span>
+              <span className="block font-medium text-espresso">
+                {doctor.firstName} <span className="block font-light text-espresso/70">{doctor.lastName}</span>
               </span>
             </h1>
-            <p className="label-wide mt-4 text-sm font-medium text-bronze uppercase tracking-widest">
+            <p className="mt-6 flex flex-wrap gap-x-4 gap-y-2 text-sm font-medium text-bronze uppercase tracking-[0.2em]">
+              {doctor.specialty}
+              <span className="text-bronze/30">|</span>
               {registration}
             </p>
-            <p className="mt-6 max-w-xl border-l border-bronze/40 pl-5 text-base leading-relaxed text-muted-foreground/90">
+            <p className="mt-8 max-w-lg text-lg leading-relaxed text-muted-foreground/90">
               {doctor.heroParagraph}
             </p>
-            <ScheduleButton href={doctor.whatsappUrl} className="mt-9" />
+            <ScheduleButton href={doctor.whatsappUrl} className="mt-12 w-full sm:w-auto px-10 py-4 text-sm" />
           </div>
         </Reveal>
 

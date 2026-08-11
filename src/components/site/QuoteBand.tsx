@@ -5,15 +5,15 @@ export function QuoteBand() {
   const { quote } = doctor;
 
   return (
-    <section className="px-6 py-24 lg:py-32">
-      <Reveal as="blockquote" className="mx-auto max-w-4xl text-center">
-        <p className="text-2xl leading-snug font-light tracking-tight text-espresso sm:text-3xl lg:text-[2.6rem]">
+    <section className="px-6 py-32 lg:py-52">
+      <Reveal as="blockquote" className="mx-auto max-w-5xl text-center">
+        <p className="text-3xl leading-[1.2] font-light tracking-tight text-espresso sm:text-4xl lg:text-[3.2rem]">
           {quote.before}
-          <strong className="font-semibold">{quote.highlight1}</strong>
+          <span className="font-medium italic">{quote.highlight1}</span>
           {quote.middle}
-          <strong className="font-semibold">{quote.highlight2}</strong>
+          <span className="font-medium italic">{quote.highlight2}</span>
           {quote.after}
-          <strong className="font-semibold">{quote.highlight3}</strong>
+          <span className="font-medium italic">{quote.highlight3}</span>
         </p>
       </Reveal>
     </section>

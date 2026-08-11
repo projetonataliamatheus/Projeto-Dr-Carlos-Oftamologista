@@ -74,7 +74,7 @@
 }
 
 :root {
-  --radius: 1.75rem;
+  --radius: 0.5rem;
 
   /* Paleta base extraída da página de referência */
   --cream: oklch(0.988 0.005 85);
