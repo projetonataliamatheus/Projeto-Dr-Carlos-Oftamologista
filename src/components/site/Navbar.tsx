@@ -25,11 +25,11 @@ export function Navbar() {
 
   return (
     <nav
-      className={`fixed top-0 z-50 w-full transition-all duration-300 ${
-        isScrolled ? "bg-white/95 py-2 shadow-sm backdrop-blur-md" : "bg-white py-4"
+      className={`fixed top-0 z-50 w-full transition-all duration-500 ${
+        isScrolled ? "bg-white/90 py-3 shadow-sm backdrop-blur-xl" : "bg-transparent py-6"
       }`}
     >
-      <div className="mx-auto flex max-w-[1400px] items-center justify-between px-6 lg:px-8">
+      <div className="mx-auto flex max-w-[1500px] items-center justify-between px-6 lg:px-12">
         <div className="flex shrink-0 items-center">
           <span className="text-lg font-bold tracking-tight text-espresso lg:text-xl">
             {doctor.prefix} Carlos Rodrigo

@@ -20,7 +20,7 @@ export function Hero() {
         className="pointer-events-none absolute -top-40 -left-40 size-[36rem] rounded-full bg-cream/50 blur-3xl"
       />
 
-      <div className="relative mx-auto grid max-w-6xl items-end gap-0 px-6 lg:grid-cols-[1fr_1fr] lg:px-8">
+      <div className="relative mx-auto grid max-w-7xl items-end gap-12 px-6 lg:grid-cols-[1.1fr_0.9fr] lg:px-12">
         <Reveal className="relative z-10 pb-16 lg:pb-24">
           <div className="relative rounded-[2.5rem] border border-bronze/20 bg-white/50 px-4 py-16 sm:px-12 lg:border-none lg:bg-transparent lg:px-0 lg:py-16">
             <h1 className="text-5xl leading-[1.1] tracking-tight text-espresso sm:text-6xl lg:text-7xl">

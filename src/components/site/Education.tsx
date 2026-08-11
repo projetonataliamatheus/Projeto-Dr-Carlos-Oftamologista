@@ -4,20 +4,21 @@ import { Reveal } from "./Reveal";
 
 export function Education() {
   return (
-    <section aria-labelledby="formacao" className="relative px-4 pb-6 sm:px-6 lg:px-8">
-      <Reveal className="mx-auto max-w-6xl surface-taupe rounded-[2.25rem] px-6 py-14 shadow-[var(--shadow-soft)] sm:px-10 lg:px-14 lg:py-20">
-        <div className="grid gap-12 lg:grid-cols-2 lg:gap-16">
+    <section aria-labelledby="formacao" className="relative px-6 py-24 sm:px-8 lg:px-12 lg:py-40">
+      <Reveal className="mx-auto max-w-7xl px-0">
+        <div className="grid gap-20 lg:grid-cols-2 lg:gap-32">
           <div className="lg:border-r lg:border-taupe-foreground/25 lg:pr-14">
-            <h2 id="formacao" className="text-3xl tracking-tight sm:text-4xl">
-              <span className="font-light">Formação </span>
-              <span className="font-semibold">Médica</span>
+            <h2 id="formacao" className="text-4xl tracking-tight text-espresso sm:text-5xl lg:text-6xl">
+              <span className="block font-light text-espresso/80">Trajetória e </span>
+              <span className="block font-medium">Formação Médica</span>
             </h2>
-            <p className="mt-3 text-sm">
-              <span className="font-semibold uppercase">{doctor.specialty}</span>
-              <span className="opacity-80"> | {registration}</span>
+            <p className="mt-8 flex items-center gap-3 text-sm tracking-[0.15em] text-bronze uppercase">
+              <span className="font-semibold">{doctor.specialty}</span>
+              <span className="size-1 rounded-full bg-bronze/30" />
+              <span className="font-medium text-bronze/70">{registration}</span>
             </p>
 
-            <div className="mt-7 space-y-5 text-sm leading-relaxed opacity-95">
+            <div className="mt-10 space-y-6 text-lg leading-relaxed text-muted-foreground/90">
               {doctor.bioParagraphs.map((paragraph) => (
                 <p key={paragraph}>{paragraph}</p>
               ))}
