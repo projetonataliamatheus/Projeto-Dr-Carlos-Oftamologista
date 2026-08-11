@@ -1,60 +1,60 @@
-import t1 from "@/assets/treatment-1.jpg";
-import t2 from "@/assets/treatment-2.jpg";
-import t3 from "@/assets/treatment-3.jpg";
-import t4 from "@/assets/treatment-4.jpg";
-import t5 from "@/assets/treatment-5.jpg";
-import t6 from "@/assets/treatment-6.jpg";
-import t7 from "@/assets/treatment-7.jpg";
-import t8 from "@/assets/treatment-8.jpg";
+import t1 from "@/assets/treatments/olho-seco.asset.json";
+import t2 from "@/assets/treatments/refrativa.asset.json";
+import t3 from "@/assets/treatments/ceratocone.asset.json";
+import t4 from "@/assets/treatments/crosslinking.asset.json";
+import t5 from "@/assets/treatments/lentes.asset.json";
+import t6 from "@/assets/treatments/catarata.asset.json";
+import t7 from "@/assets/treatments/pterigio.asset.json";
+import t8 from "@/assets/treatments/transplante.asset.json";
 import type { Treatment } from "./doctor";
 
 export const treatments: Treatment[] = [
   {
     title: "Tratamento com Luz Pulsada para Olho Seco",
     description:
-      "Abordagem inovadora e não invasiva que alivia os sintomas e estimula a recuperação natural dos tecidos, com sessões rápidas e confortáveis.",
-    image: t1,
+      "A Luz Pulsada é uma alternativa terapêutica utilizada no tratamento do olho seco, auxiliando no funcionamento das glândulas de Meibômio e contribuindo para uma melhor qualidade da lágrima e maior conforto ocular.",
+    image: t1.url,
   },
   {
     title: "Cirurgia Refrativa",
     description:
-      "Procedimento planejado para corrigir alterações funcionais, reduzindo a dependência de recursos externos e devolvendo autonomia ao paciente.",
-    image: t2,
+      "Procedimento realizado para corrigir alterações da refração, como miopia, hipermetropia e astigmatismo, podendo reduzir a necessidade do uso de óculos ou lentes de contato.",
+    image: t2.url,
   },
   {
     title: "Tratamento de Ceratocone",
     description:
-      "Exames de alta precisão que permitem identificar a condição no estágio inicial e definir o plano terapêutico mais adequado para cada caso.",
-    image: t3,
+      "O tratamento do ceratocone é definido de forma individualizada, de acordo com o estágio da doença, podendo incluir lentes de contato especiais, implante de anel intracorneano e técnicas para estabilização da córnea.",
+    image: t3.url,
   },
   {
     title: "Crosslinking Corneano",
     description:
-      "Técnica moderna que fortalece e preserva a estrutura tratada, com recuperação rápida e menor desconforto no pós-procedimento.",
-    image: t4,
+      "Procedimento desenvolvido para aumentar a resistência e estabilidade da córnea, sendo especialmente indicado para casos de ceratocone e outras condições associadas ao afinamento corneano.",
+    image: t4.url,
   },
   {
     title: "Adaptação de Lentes de Contato Rígidas, Tóricas e Gelatinosas",
     description:
-      "Processo individualizado de adaptação e acompanhamento clínico, visando o máximo de conforto e o melhor resultado funcional possível.",
-    image: t5,
+      "Processo personalizado de escolha e adaptação das lentes de contato, considerando as características dos olhos de cada paciente para proporcionar boa correção visual, conforto e segurança.",
+    image: t5.url,
   },
   {
     title: "Cirurgia de Catarata com Implante de Lente",
     description:
-      "Procedimento seguro e eficaz realizado em centro cirúrgico equipado com tecnologia de ponta e equipe especializada.",
-    image: t6,
+      "Procedimento realizado para tratar a catarata, removendo o cristalino opacificado e substituindo-o por uma lente intraocular, com o objetivo de recuperar a qualidade da visão.",
+    image: t6.url,
   },
   {
     title: "Cirurgia de Pterígio com Cola",
     description:
-      "Uso de dispositivos de última geração selecionados de acordo com as necessidades e o estilo de vida de cada paciente.",
-    image: t7,
+      "Técnica cirúrgica moderna para a remoção do pterígio, utilizando cola biológica para auxiliar na fixação do tecido e proporcionar uma abordagem mais delicada e menos invasiva.",
+    image: t7.url,
   },
   {
     title: "Transplante de Córnea",
     description:
-      "Programa de cuidado contínuo focado em manter os resultados alcançados e prevenir recidivas ao longo dos anos.",
-    image: t8,
+      "Procedimento indicado quando a córnea apresenta alterações importantes que comprometem sua função. A técnica substitui a córnea comprometida por tecido corneano saudável de um doador.",
+    image: t8.url,
   },
 ];
