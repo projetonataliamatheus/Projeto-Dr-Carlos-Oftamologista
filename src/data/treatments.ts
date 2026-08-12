@@ -54,7 +54,7 @@ export const treatments: Treatment[] = [
   {
     title: "Transplante de Córnea",
     description:
-      "Procedimento indicado quando a córnea apresenta alterações importantes que comprometem sua função. A técnica substitui a córnea comprometida por tecido corneano saudável de um doador.",
+      "O transplante de córnea é um procedimento cirúrgico que substitui a córnea comprometida por um tecido saudável, buscando restaurar a qualidade visual e a função ocular em casos de doenças, lesões ou cicatrizes corneanas.",
     image: t8.url,
   },
 ];
