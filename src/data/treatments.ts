@@ -1,6 +1,6 @@
 import t1 from "@/assets/treatments/olho-seco-v2.png.asset.json";
 import t2 from "@/assets/treatments/refrativa.asset.json";
-import t3 from "@/assets/treatments/ceratocone.asset.json";
+import t3 from "@/assets/treatments/ceratocone-v2.png.asset.json";
 import t4 from "@/assets/treatments/crosslinking.asset.json";
 import t5 from "@/assets/treatments/lentes.asset.json";
 import t6 from "@/assets/treatments/catarata.asset.json";
