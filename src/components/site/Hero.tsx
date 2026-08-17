@@ -1,4 +1,4 @@
-import drCarlos from "@/assets/dr-hero-fix.png.asset.json";
+import drCarlos from "@/assets/dr-hero-fix.png";
 import { doctor, registration } from "@/data/doctor";
 import { Reveal } from "./Reveal";
 import { ScheduleButton } from "./ScheduleButton";
@@ -54,7 +54,7 @@ export function Hero() {
           {/* Doctor Image with hover effect */}
           <div className="relative overflow-hidden pt-4">
             <img
-              src={drCarlos.url}
+              src={drCarlos}
               alt={`Retrato profissional de ${doctor.prefix} ${doctor.firstName} ${doctor.lastName}`}
               width={912}
               height={1200}
