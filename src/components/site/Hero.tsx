@@ -50,10 +50,9 @@ export function Hero() {
             className="absolute bottom-0 left-1/2 size-[22rem] -translate-x-1/2 rounded-t-full bg-cream transition-transform duration-700 ease-out group-hover:scale-105 sm:size-[26rem] lg:left-auto lg:right-0 lg:translate-x-0 lg:size-[30rem]"
           />
 
-          {/* Doctor Image with hover effect */}
           <div className="relative overflow-hidden pt-4">
             <img
-              src={drCarlos.url}
+              src="/images/dr-hero.webp"
               alt={`Retrato profissional de ${doctor.prefix} ${doctor.firstName} ${doctor.lastName}`}
               width={912}
               height={1200}
