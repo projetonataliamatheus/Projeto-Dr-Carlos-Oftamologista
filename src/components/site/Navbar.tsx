@@ -1,5 +1,4 @@
 import { doctor } from "@/data/doctor";
-import navLogo from "@/assets/nav-logo.png.asset.json";
 import { ScheduleButton } from "./ScheduleButton";
 import { useEffect, useState } from "react";
 
