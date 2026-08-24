@@ -31,7 +31,7 @@ export function Navbar() {
       <div className="mx-auto flex max-w-[1500px] items-center justify-between px-6 lg:px-12">
         <div className="flex shrink-0 items-center">
           <span className="text-xl font-medium tracking-tight text-espresso lg:text-2xl">
-            {doctor.prefix} <span className="font-light text-espresso/70">Carlos Rodrigo</span>
+            {doctor.prefix} <span className="font-light text-espresso/70">Carlos Rodrigo Feitosa</span>
           </span>
         </div>
 
