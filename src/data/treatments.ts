@@ -2,11 +2,6 @@ import type { Treatment } from "./doctor";
 
 export const treatments: Treatment[] = [
   {
-    title: "Olho Seco",
-    description: "",
-    image: "/images/olho-seco.webp",
-  },
-  {
     title: "Cirurgia Refrativa",
     description:
       "Procedimento realizado para corrigir alterações da refração, como miopia, hipermetropia e astigmatismo, podendo reduzir a necessidade do uso de óculos ou lentes de contato.",
