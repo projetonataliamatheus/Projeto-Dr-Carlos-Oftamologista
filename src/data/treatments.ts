@@ -2,9 +2,8 @@ import type { Treatment } from "./doctor";
 
 export const treatments: Treatment[] = [
   {
-    title: "Tratamento com Luz Pulsada para Olho Seco",
-    description:
-      "A Luz Pulsada é uma alternativa terapêutica utilizada no tratamento do olho seco, auxiliando no funcionamento das glândulas de Meibômio e contribuindo para uma melhor qualidade da lágrima e maior conforto ocular.",
+    title: "Olho Seco",
+    description: "",
     image: "/images/olho-seco.webp",
   },
   {

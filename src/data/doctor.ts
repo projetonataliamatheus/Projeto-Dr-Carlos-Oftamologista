@@ -47,14 +47,24 @@ export const doctor = {
   },
   education: [
     {
-      label: "Graduação - Medicina",
+      label: "Graduação — Medicina",
       title: "Centro Universitário Christus",
       lines: ["Formado em 2021."],
+    },
+    {
+      label: "Residência Médica",
+      title: "Hospital Geral de Fortaleza — Fortaleza, CE",
+      lines: ["Formação especializada em Oftalmologia."],
     },
     {
       label: "Especialidade",
       title: "Oftalmologia",
       lines: ["Registro de Qualificação de Especialista — RQE 138773."],
+    },
+    {
+      label: "Subespecialização",
+      title: "UNICAMP",
+      lines: ["Aperfeiçoamento em Córnea, Catarata e Cirurgia Refrativa."],
     },
     {
       label: "Registro Profissional",
