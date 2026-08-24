@@ -23,8 +23,8 @@ export type Location = {
 
 export const doctor = {
   prefix: "Dr.",
-  firstName: "Carlos Rodrigo Damasceno",
-  lastName: "Feitosa de Santana",
+  firstName: "Carlos Rodrigo",
+  lastName: "Feitosa",
   specialty: "Oftalmologista",
   crm: "CRM-SP 269854",
   rqe: "RQE 138773",
@@ -32,9 +32,9 @@ export const doctor = {
   whatsappUrl: "https://wa.me/551932511718",
   lattesUrl: "https://lattes.cnpq.br/",
   heroParagraph:
-    "Uma prática construída com estudo e dedicação. O Dr. Carlos Rodrigo Feitosa de Santana é médico oftalmologista, formado pelo Centro Universitário Christus, com trajetória acadêmica e atuação voltadas à Oftalmologia.",
+    "Uma prática construída com estudo e dedicação. O Dr. Carlos Rodrigo Feitosa é médico oftalmologista, formado pelo Centro Universitário Christus, com trajetória acadêmica e atuação voltadas à Oftalmologia.",
   bioParagraphs: [
-    "O Dr. Carlos Rodrigo Feitosa de Santana é médico oftalmologista, formado pelo Centro Universitário Christus, com trajetória acadêmica e atuação voltadas à Oftalmologia.",
+    "O Dr. Carlos Rodrigo Feitosa é médico oftalmologista, formado pelo Centro Universitário Christus, com trajetória acadêmica e atuação voltadas à Oftalmologia.",
     "Sua trajetória inclui participação em congressos, apresentações de casos clínicos e produção científica na área, mantendo uma busca constante por atualização e conhecimento.",
   ],
   quote: {
