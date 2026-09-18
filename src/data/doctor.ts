@@ -78,12 +78,13 @@ export const doctor = {
     },
   ] satisfies EducationItem[],
   featured: {
-    titleStart: "Olho Seco",
-    titleHighlight: "e Tratamentos",
+    titleStart: "OLHO",
+    titleHighlight: "SECO",
     description:
-      "A síndrome do olho seco é uma condição comum que ocorre quando os olhos não produzem lágrimas suficientes ou quando a qualidade das lágrimas é inadequada para manter a lubrificação adequada da superfície ocular.",
-    technologiesIntro: "Conheça mais sobre nossas opções de tratamento:",
-    technologies: ["Luz Pulsada (IPL)", "Jett Plasma"],
+      "O tratamento do olho seco é realizado de forma individualizada, considerando as causas, os sintomas e as necessidades de cada paciente.",
+    technologiesIntro:
+      "Após uma avaliação oftalmológica detalhada, é possível definir a abordagem mais adequada para proporcionar mais conforto, melhorar a qualidade da lágrima e preservar a saúde da superfície ocular.",
+    technologies: [],
     ctaLabel: "SAIBA MAIS",
     ctaUrl: "#contato",
   },
