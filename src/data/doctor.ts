@@ -63,7 +63,7 @@ export const doctor = {
     },
     {
       label: "Subespecialização",
-      title: "UNICAMP",
+      title: "Universidade Estadual de Campinas (UNICAMP)",
       lines: ["Aperfeiçoamento em Córnea, Catarata e Cirurgia Refrativa."],
     },
     {
