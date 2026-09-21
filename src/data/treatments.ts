@@ -1,4 +1,5 @@
 import type { Treatment } from "./doctor";
+import cataractSurgeryAsset from "@/assets/cirurgia-catarata-implante-lente.jpg.asset.json";
 
 export const treatments: Treatment[] = [
   {
@@ -29,7 +30,7 @@ export const treatments: Treatment[] = [
     title: "Cirurgia de Catarata com Implante de Lente",
     description:
       "Procedimento realizado para tratar a catarata, removendo o cristalino opacificado e substituindo-o por uma lente intraocular, com o objetivo de recuperar a qualidade da visão.",
-    image: "/images/catarata.webp",
+    image: cataractSurgeryAsset.url,
   },
   {
     title: "Cirurgia de Pterígio com Cola",
